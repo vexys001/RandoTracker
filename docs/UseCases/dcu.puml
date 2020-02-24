@@ -12,6 +12,7 @@ actor Player as P
 rectangle "System" {
   (Load an Item List) as LL
   (Save an Item List) as SL
+  (Categorize an Item of the List) as CI
   (Remove an Item of the List) as RI
   (Undo an Item Removal) as UIR
   (Reset the List) as RL
@@ -22,6 +23,7 @@ rectangle "System" {
 
   P -- LL
   P -- SL
+  P -- CI
   P -- RI
   P -- UIR
   P -- RL

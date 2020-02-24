@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+skinparam style strictuml
+skinparam packageStyle rect
+skinparam backgroundcolor transparent
+skinparam defaultfontname Verdana
+
+title DCU Randomizer Tracker Project
+
+actor Player as P
+
+rectangle "System" {
+  (Load an Item List) as LL
+  (Remove an Item of the List) as RI
+  (Undo an Item Removal) as UIR
+  (Reset the List) as RL
+  (Undo Reset the List) as UR
+
+  P -- LL
+  P -- RI
+  P -- UIR
+  P -- RL
+  P -- UR
+}
+@enduml

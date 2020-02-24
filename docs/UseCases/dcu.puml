@@ -5,21 +5,29 @@ skinparam packageStyle rect
 skinparam backgroundcolor transparent
 skinparam defaultfontname Verdana
 
-title DCU Randomizer Tracker Project
+title DCU - Randomizer Tracker Project
 
 actor Player as P
 
 rectangle "System" {
   (Load an Item List) as LL
+  (Save an Item List) as SL
   (Remove an Item of the List) as RI
   (Undo an Item Removal) as UIR
   (Reset the List) as RL
   (Undo Reset the List) as UR
+  (Submit List as Completed Run) as SLC
+  (Open Stats Page) as OS
+  (Submit Leftover Report) as SR
 
   P -- LL
+  P -- SL
   P -- RI
   P -- UIR
   P -- RL
   P -- UR
+  P -- SLC
+  P -- OS
+  P -- SR
 }
 @enduml

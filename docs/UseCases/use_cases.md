@@ -231,7 +231,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The user has reset the list.
 
-## CU08 : Submit Item List as a Completed Run *
+## CU08 : Submit Leftover Report
 
 **Scope:**  System Use case
 
@@ -240,30 +240,28 @@ N/A
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to save a list as completed for statistics.
 
 **Preconditions:** User has a list loaded.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** The list is removed form the screen. The statistics of the completed list are saved.
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Save as completed.
+3. The list is removed.
+4. The statistics associated to the completed list are saved.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1: The player cancels the saving selection and returns to the menu.
 
     1. During Step 1, you can click somewhere else to close the menu.
 
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
-
 **Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The statistics have a place to be saved.
 
-## CU09 : Opens Statistics Page *
+## CU09 : Opens Statistics Page 
 
 **Scope:**  System Use case
 
@@ -272,57 +270,29 @@ N/A
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to see his statistics for a game.
 
-**Preconditions:** User has a list loaded.
+**Preconditions:** User has a record of statistics.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** Window displaying some statistics is displayed.
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Show statistics.
+3. User selects a game.
+4. Window displaying statistics from selected game appears.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1-3a: The player cancels the statistics selection and returns to the window.
 
     1. During Step 1, you can click somewhere else to close the menu.
 
     2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
 
-**Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+4a. The player closes the statistics window.
 
-## CU10 : Submit Leftover Report *
-
-**Scope:**  System Use case
-
-**Level:** User-goal Level
-
-**Primary Actor:** User
-
-**Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
-
-**Preconditions:** User has a list loaded.
-
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
-
-**Main Success Scenario:** 
-1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
-
-**Extensions:**
-
-1-3a: The player cancels the saving selection and returns to the menu.
-
-    1. During Step 1, you can click somewhere else to close the menu.
-
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+    1. The window has a close button.
 
 **Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+- User has a record of statistics.

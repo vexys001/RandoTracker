@@ -17,10 +17,9 @@ rectangle "System" {
   (Undo an Item Removal) as UIR
   (Reset the List) as RL
   (Undo Reset the List) as UR
-  (Submit List as Completed Run) as SLC
-  (Open Stats Page) as OS
   (Submit Leftover Report) as SR
-
+  (Open Stats Page) as OS
+  
   P -- LL
   P -- SL
   P -- CI
@@ -28,7 +27,6 @@ rectangle "System" {
   P -- UIR
   P -- RL
   P -- UR
-  P -- SLC
   P -- OS
   P -- SR
 }

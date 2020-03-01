@@ -80,9 +80,9 @@
 
 **Scope:**  System Use case
 
-**Level:** User-goal Level
+**Level:** Subfunction Level
 
-**Primary Actor:** User
+**Primary Actor:** System
 
 **Stakeholders and Interests:**
 - User:  Wants to have a list of Buttons that can be differientiated by their Categories
@@ -144,7 +144,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU05 : Undo an Item Removal *
+## CU05 : Undo an Item Removal 
 
 **Scope:**  System Use case
 
@@ -153,30 +153,27 @@ N/A
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to undo a recent item removal.
 
-**Preconditions:** User has a list loaded.
+**Preconditions:** User has a list loaded and has removed an item.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** User has an updated list with the last removed item back.
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Undo remove
+3. The List is updated.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1a: The player cancels the undo and returns to the list.
 
-    1. During Step 1, you can click somewhere else to close the menu.
-
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+    1. You can click somewhere else to close the menu.
 
 **Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The user has removed one or more item off the loaded list.
 
-## CU06 : Reset the Item List *
+## CU06 : Reset the Item List 
 
 **Scope:**  System Use case
 
@@ -185,30 +182,27 @@ N/A
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to reset the list he last loaded.
 
 **Preconditions:** User has a list loaded.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** The List is reset to its formal state.
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Reset
+3. The List is reset to its formal state.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1a: The player cancels the reset and returns to the list.
 
-    1. During Step 1, you can click somewhere else to close the menu.
-
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+    1. You can click somewhere else to close the menu.
 
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU07 : Undo the Reset the Item List *
+## CU07 : Undo the Reset the Item List 
 
 **Scope:**  System Use case
 
@@ -217,28 +211,25 @@ N/A
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to undo the last reset of the list.
 
-**Preconditions:** User has a list loaded.
+**Preconditions:** User has a list loaded and he reset it.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** The List is reset to its state before the last reset.
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Undo reset
+3. The list is updated to its state before the last reset.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1a: The player cancels the undo reset and returns to the list.
 
-    1. During Step 1, you can click somewhere else to close the menu.
-
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+    1. You can click somewhere else to close the menu.
 
 **Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The user has reset the list.
 
 ## CU08 : Submit Item List as a Completed Run *
 

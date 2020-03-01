@@ -22,7 +22,7 @@
 4. File is loaded and a list of buttons for each item of the list appears.
 
 **Extensions:**
-1-3a: The player cancels the loading selection and returns to the menu.
+1-3a: The player cancels the loading selection and returns to the menu.\n
     1. During Step 1, you can click somewhere else to close the menu.
     2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
 3a. The player selects a wrong type of file.

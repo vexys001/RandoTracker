@@ -76,7 +76,7 @@
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU03 : Categorize an Item of the List *
+## CU03 : Categorize an Item of the List
 
 **Scope:**  System Use case
 
@@ -85,30 +85,40 @@
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to have a list of Buttons that can be differientiated by their Categories
 
-**Preconditions:** User has a list loaded.
+**Preconditions:** User has a valid list to load with the proper tags for categories.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** User has a list of buttons for each item of the list to use. Buttons of the same categories have the same look(color).
 
 **Main Success Scenario:** 
 1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+2. User selects Load and a document explorer window is opened at the root of the program.
+3. User selects a XML file from his desired folder.
+4. File is loaded and a list of buttons for each item of the list appears. Buttons of the same categories look similar(color).
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
+1-3a: The player cancels the loading selection and returns to the menu.
 
     1. During Step 1, you can click somewhere else to close the menu.
 
     2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+   
+3a. The player selects a wrong type of file.
+    
+    1. The system does not allow to other types of documents to appear in the explorer window.
+    
+    2. OR The system warns the user of an undesired type of file being loaded. Lets the user pick again.
+
+4a. The XML format of the list is invalid.
+    
+    1. Warns the user that the list could not be loaded due to errors in the document format.
 
 **Special Requirements** 
-- User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
+- User has a valid XML file containing a list of items with category tags.
 
-## CU04 : Remove an Item of the List *
+## CU04 : Remove an Item of the List 
 
 **Scope:**  System Use case
 
@@ -117,25 +127,19 @@
 **Primary Actor:** User
 
 **Stakeholders and Interests:**
-- User:  Wants to save a list in progress to reload for later.
+- User:  Wants to remove an item of the list. To mark that he might have found said item.
 
 **Preconditions:** User has a list loaded.
 
-**Postconditions:** User has a new XML file in folder of his choice of the current loaded list.
+**Postconditions:** User has an updated list with one less item of the selected item.
 
 **Main Success Scenario:** 
-1. User opens the menu.
-2. User selects Save and a document explorer window is opened at the root of the program.
-3. User selects a name and a desired folder for the new XML file.
-4. XML File is created.
+1. User clicks on a button for an Item.
+2. The List is updated.
 
 **Extensions:**
 
-1-3a: The player cancels the saving selection and returns to the menu.
-
-    1. During Step 1, you can click somewhere else to close the menu.
-
-    2. During Step 2 and 3, you can click cancel at anytime and returns to the main window.
+N/A
 
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.

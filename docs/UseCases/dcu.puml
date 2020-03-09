@@ -13,6 +13,7 @@ rectangle "System" {
   (Load an Item List) as LL
   (Save an Item List) as SL
   (Categorize an Item of the List) as CI
+  (Recategorize an Item of the List) as RCI
   (Remove an Item of the List) as RI
   (Undo an Item Removal) as UIR
   (Reset the List) as RL

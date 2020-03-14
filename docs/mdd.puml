@@ -8,46 +8,45 @@ hide empty members
 
 title MDD
 
-class User <CCC> {}
+class User <C05> {}
 
-class Menu <CCC> {
+class Menu <C13> {
     tabs:  tabs
     buttons: button
 }
 
-class MementoList <CCC> {
-    originalList: ItemList
-}
-
-class ItemList <Conceptual Class Category> {
+class ItemList <C11> {
     items : ArrayList<Object> 
 }
-class Item <CCC>  {
+class Item <C12>  {
   name : string
   occurences : integer
 }
 
-class ButtonList<CCC>{
+class ButtonList<C11>{
     buttons: ArrayList<Button>
 }
 
-class Button <CCC> {}
+class Button <C08 & C12> {}
 
-class ListExtractor <CCC> {}
+class ListExtractor <C13> {}
 
-class Document <CCC> {
+class Document <C14> {
     link : string
 }
 
+Document "1" -- "1" Menu : > Selected in\nA08
+ListExtractor "1" -- "1" Document : > Uses\nA11
 
-User "1" -- "1" Menu : Uses\nA##
-User "1" -l- "1" ButtonList : > Uses\nA##
-ButtonList "1" -- "*" Button : Composed of\nA##
-ItemList "1" -- "*" Item : Composed of\nA##
-ButtonList "1" -l- "1" ItemList : > Represents\nA##
-ListExtractor "1" -- "1" ItemList : > Creates\nA##
-Menu "1" -- "1" Document : Selects\nA##
-Document "1" -- "1" ListExtractor : Is sent to\nA##
-ItemList "1" -l- "1" MementoList : > Creates\nA##
+User "1" -- "1" Menu : Uses\nA11
+ButtonList "1" -l- "1" User : < Uses\nA11
+
+ListExtractor "1" -- "1" ButtonList : > Creates\nA11
+ListExtractor "1" -- "1" ItemList : > Creates\nA11
+
+ItemList "1" -l- "1" ButtonList : < Represents\nA07
+ButtonList "1" -- "*" Button : > Manages\nA11
+
+Item "1" -- "*" ItemList : > are saved in\nA08
 
 @enduml

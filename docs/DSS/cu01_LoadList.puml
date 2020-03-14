@@ -3,7 +3,7 @@ skinparam style strictuml
 skinparam DefaultFontName Verdana
 skinparam backgroundcolor transparent
 skinparam sequenceMessageAlign center
-title CU01 - Load an ItemList
+title DSS - Load an ItemList
 
 actor ":User" as u
 participant ":Application" as a 

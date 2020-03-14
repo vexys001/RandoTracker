@@ -18,10 +18,9 @@
 **Postconditions:** User has a list of buttons for each item of the list to use.
 
 **Main Success Scenario:** 
-1. User opens the menu.
-2. User selects Load and a document explorer window is opened at the root of the program.
-3. User selects a XML file from his desired folder.
-4. File is loaded and a list of buttons for each item of the list appears.
+1. User selects Load and a Document Explorer Window is opened at the root of the program.
+2. User selects a XML file from his desired folder.
+3. File is loaded and a list of buttons for each item of the list appears.
 
 **Extensions:**
 

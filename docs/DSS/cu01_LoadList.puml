@@ -1,0 +1,17 @@
+@startuml 
+skinparam style strictuml
+skinparam DefaultFontName Verdana
+skinparam backgroundcolor transparent
+skinparam sequenceMessageAlign center
+title CU01 - Load an ItemList
+
+actor ":User" as u
+participant ":Application" as a 
+
+u -> a : openLoadWindow()
+a --> u : Document Explorer Window
+
+u -> a : loadItemList(url: URL)
+a --> u : ItemList saved, ButtonList loaded
+
+@enduml

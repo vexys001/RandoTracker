@@ -1,0 +1,12 @@
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU of openLoadWindow(CU01)
+
+participant "appController:Controller" as ac
+
+
+note left of ac: Note
+->ac : documentWindow = openLoadWindow()
+
+@enduml

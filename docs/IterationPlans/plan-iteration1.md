@@ -33,7 +33,7 @@ HANDLED CUs: CU01, CU04, C06
     - **PreCondition**: User selected the Load list option in the menu.
     - **PostConditions**: N/A
 
-2.  **Contract** : loadItemList()
+2.  **Contract** : loadItemList(url: URL)
     - **Reference**: CU01
     - **PreCondition**: 
       - User has selected a properly formatted XML file from the Document Explorer Window

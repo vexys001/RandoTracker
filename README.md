@@ -40,5 +40,5 @@ DCU - Randomizer Tracker Project
 
 ## Iteration 1
 
-[Link to the Plan of the First iteration](/docs/IterationPlans/iteration1.md)
+[Link to the Plan of the First iteration](/docs/IterationPlans/plan-iteration1.md)
 

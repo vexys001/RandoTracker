@@ -16,7 +16,7 @@ class Menu <C13> {
 }
 
 class ItemList <C11> {
-    items : ArrayList<Object> 
+    items : ArrayList<Item> 
 }
 class Item <C12>  {
   name : string

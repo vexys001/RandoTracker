@@ -9,13 +9,14 @@ HANDLED CUs: CU01, CU04, C06
   - [CU01 Load an Item List](#cu01-load-an-item-list)
     - [DSS](#dss)
     - [Contracts](#contracts)
+    - [RDCU](#rdcu)
   - [CU04 Remove an Item of the Button List](#cu04-remove-an-item-of-the-button-list)
   - [CU06 Reset the Button List](#cu06-reset-the-button-list)
   - [Return to README](#return-to-readme)
 
 ## MDD 
 
-![MDD](https://www.plantuml.com/plantuml/png/0/TLDTQzmm47pNhrYkq48WS6uR4ammIUyQ2EGeDAHFVP7jlJiridIirY57w7_lIiPVFU87ozgTsPqTMJU1DN7RM1MUZJjeqWq4FbgKDvdglqoDMzrQtdh7JZS8lv1gxVG4iP8KUVl8IEZvUC0x2QoyzGGVIjkYihXbO0zaTdk6sX1MRBnJUrCZO7FW8pJOb4X1VHhBMkCmLWDFlFTAiM6Hk5clbQgi3W6U0X9ShvON1RpzxOCRTAq4ioyIL20FwpBatPBsPSlidOIw3pKmxncR1nCuihEURIGO88TR8dsCsUiVvH-HNu0GHrxaV2uWaP9BUVBIxMJlgwebT1N6EiOnxf36hj-IYbGvjdsRQnpRnYuTjfXBxeBHXolu24d6w4QaVdzbqXLxwcqPicjVjGswDF7NVcAn_NcKBzW1jSWMS7wUbkHo3ezenGkiPQpVxdPvfURz9eIXI0v5FBWW-2nJAftXQU4fPdIe0zeEcPXoi9DYxtQVb136Yb1pJtgNC_mE-PoWXiHKpQp3JpmG1fasKfQN9nC8vMmnFRmSDdAbThCM2NEgfG1DSb7royHrTOEkbblx3m00 "MDD")
+![MDD](https://www.plantuml.com/plantuml/png/0/TLDDI-H04BtthoX6S651cBZAIf2WphWWx5mKFNdfIMfc6ZlTGtL576J_-rPto9U3EUIZwhrNLQ_IDu4rSLDR5TwCsslIDGG-M9GxcV9BfiADRYnll6EdQuGNf4exFK8i94NUFZ4IUZxiyOy45jvwWfErRL1Pt32m1pBR7KDb24istgcTgH2mtlC1QgpNI47z66IjSHZLm1Fll59iM5fSBPTAbLQ70Cy12QuNyyi2FlzrmHMwHeBPBmaga8lrEkJj8tsl6sRl9DI-g9xvm5Z_DO4ZE-lOHe81ShWbqeUOlOwm0eGsi2BZl814IHxboKctbMzVbWsXAp6g6CUuHHfgtgKUacui-ZdjS5gqnHRJXjjWTE4AJY6rCNWHgVSVJBfaJvqfVNRfowP6b-QzwEOLqz-6zWNResRP3CxEqYDvdCCJMbaaLZBMgxkTNwbflH6X5ycXY6iBWiyofT86ZuN7cC6X5cXRP6BAMaTYtrOVIGXZGQYv8ttBwN-6V4fGVMBSpQJ28-u9WqmRAVFVHnC8vUTilBmSLdAWjfCI2NFSIm6Qv9Zgzv7hwWPT9MVsFm00 "MDD")
 
 
 ## CU01 Load an Item List
@@ -26,6 +27,24 @@ HANDLED CUs: CU01, CU04, C06
 
 ### Contracts
 
+1.  **Contract** : openLoadWindow()
+    - **Reference**: CU01
+    - **PreCondition**: User selected the Load list option in the menu.
+    - **PostConditions**: N/A
+
+2.  **Contract** : loadItemList()
+    - **Reference**: CU01
+    - **PreCondition**: 
+      - User has selected a properly formatted XML file from the Document Explorer Window
+    - **PostConditions**: 
+      - An instance of the ItemList is created. 
+      - An instance of an Item is created for each element extracted.
+      - Each Item created is associated to the ItemList.
+      - An instance of the ButtonList is created. 
+      - An instance of an ItemButton is created for each element extracted.
+      - Each ItemButton created is associated to the ButtonList.
+
+### RDCU
 
 ## CU04 Remove an Item of the Button List
 

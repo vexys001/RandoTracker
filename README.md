@@ -31,3 +31,10 @@ DCU - Randomizer Tracker Project
 ## CU : Use Cases
 
 [Use Cases](/docs/UseCases/use_cases.md)
+
+## MDD : Domain Model Diagram
+
+MDD
+
+![MDD](https://www.plantuml.com/plantuml/png/0/RLF1Rjim3BthAuZcC6103xiQHT3EQO42AmQis4wxA3QJQ9L5WwA16SN-VPHintPI7ooBV7nwV9JlerYMhl4clhdGMhODHEazwfjTTP6fyM0xBmSA4co3y0kvji4k4AMccFoh82D9t-AJ1ahonB3P-mwDnuE04B0xdWHgnrY9es1EhaR0ffKU6cpsoD5ycccz2vZOW5XEP8muKOalkvqnbRSnmi-837TbMMxX_TyKVC7GJK43-eZTns9OydxVYL3GqF1X5fKD1g5lBigAW5Is2zQdH07FWatwckkcY1PHgB2LpdeeSwgqWaVYVg9o2erGm0EpxLFDtVVz7pLZ2qetiut7vwBiUP4d4uwwfwhg6FMSnEE2yYFFMhxcdZ9pedXVTpmVE-2sbuLNRYRmurzXMmbTUxsZgakUhUpIiRtDWXLhyfnkljp0xMrUyeYADBxuEpniDWk07n1p6uhRBf2Bn4JuUO8hjAIcfOWrq670dsUpG6U7Fy1USezQpXH9oGzi6QEsFEfP-xFeSLLLCkf564jozmlasSG2Nj7hPHXnv_W2kpvEBsE494R_hO_QzPFTyxs-KcFkCTJwm_y7 "MDD")
+

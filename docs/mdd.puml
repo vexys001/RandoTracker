@@ -1,11 +1,53 @@
 @startuml
-left to right direction
 skinparam style strictuml
-skinparam packageStyle rect
-skinparam backgroundcolor transparent
 skinparam defaultfontname Verdana
+skinparam ControlStereotypeFontColor #blue
+left to right direction
+hide empty members
+'skinparam linetype ortho
 
 title MDD
 
+class User <CCC> {}
+
+class Menu <CCC> {
+    tabs:  tabs
+    buttons: button
+}
+
+class MementoList <CCC> {
+    originalList: ItemList
+}
+
+class ItemList <Conceptual Class Category> {
+    items : ArrayList<Object> 
+}
+class Item <CCC>  {
+  name : string
+  occurences : integer
+}
+
+class ButtonList<CCC>{
+    buttons: ArrayList<Button>
+}
+
+class Button <CCC> {}
+
+class ListExtractor <CCC> {}
+
+class Document <CCC> {
+    link : string
+}
+
+
+User "1" -- "1" Menu : Uses\nA##
+User "1" -l- "1" ButtonList : > Uses\nA##
+ButtonList "1" -- "*" Button : Composed of\nA##
+ItemList "1" -- "*" Item : Composed of\nA##
+ButtonList "1" -l- "1" ItemList : > Represents\nA##
+ListExtractor "1" -- "1" ItemList : > Creates\nA##
+Menu "1" -- "1" Document : Selects\nA##
+Document "1" -- "1" ListExtractor : Is sent to\nA##
+ItemList "1" -l- "1" MementoList : > Creates\nA##
 
 @enduml

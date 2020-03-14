@@ -13,7 +13,7 @@
 **Stakeholders and Interests:**
 - User:  Wants a list as stated by the document loaded.
 
-**Preconditions:** User has a valid list to load.
+**Preconditions:** User has a valid document to load.
 
 **Postconditions:** User has a list of buttons for each item of the list to use.
 

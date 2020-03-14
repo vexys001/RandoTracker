@@ -47,6 +47,6 @@ ListExtractor "1" -- "1" ItemList : Creates\nA11
 ItemList "1" -l- "1" ButtonList : Represents\nA07
 ButtonList "1" -- "*" Button : Manages\nA11
 
-Item "1" -- "*" ItemList : > are saved in\nA08
+Item "*" -- "1" ItemList : > are saved in\nA08
 
 @enduml

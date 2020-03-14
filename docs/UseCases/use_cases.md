@@ -2,6 +2,19 @@
 
 **Stars mean incomplete use cases**
 
+- [Use Cases](#use-cases)
+  - [CU01 : Load an Item List](#cu01--load-an-item-list)
+  - [CU02 : Save an Item List *](#cu02--save-an-item-list)
+  - [CU03 : Categorize an Item of the List *](#cu03--categorize-an-item-of-the-list)
+  - [CU04 : Remove an Item of the Button List](#cu04--remove-an-item-of-the-button-list)
+  - [CU05 : Undo an Item Removal *](#cu05--undo-an-item-removal)
+  - [CU06 : Reset the Button List](#cu06--reset-the-button-list)
+  - [CU07 : Undo the Reset the Item List *](#cu07--undo-the-reset-the-item-list)
+  - [CU08 : Submit Leftover Report *](#cu08--submit-leftover-report)
+  - [CU09 : Opens Statistics Page *](#cu09--opens-statistics-page)
+  - [Return to README](#return-to-readme)
+
+
 ## CU01 : Load an Item List
 
 **Scope:**  System Use case
@@ -43,7 +56,7 @@
 **Special Requirements** 
 - User has a valid XML file containing a list of items.
 
-## CU02 : Save an Item List
+## CU02 : Save an Item List *
 
 **Scope:**  System Use case
 
@@ -75,7 +88,7 @@
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU03 : Categorize an Item of the List
+## CU03 : Categorize an Item of the List *
 
 **Scope:**  System Use case
 
@@ -117,7 +130,7 @@
 **Special Requirements** 
 - User has a valid XML file containing a list of items with category tags.
 
-## CU04 : Remove an Item of the List 
+## CU04 : Remove an Item of the Button List 
 
 **Scope:**  System Use case
 
@@ -143,7 +156,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU05 : Undo an Item Removal 
+## CU05 : Undo an Item Removal *
 
 **Scope:**  System Use case
 
@@ -172,7 +185,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The user has removed one or more item off the loaded list.
 
-## CU06 : Reset the Item List 
+## CU06 : Reset the Button List 
 
 **Scope:**  System Use case
 
@@ -201,7 +214,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker.
 
-## CU07 : Undo the Reset the Item List 
+## CU07 : Undo the Reset the Item List *
 
 **Scope:**  System Use case
 
@@ -230,7 +243,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The user has reset the list.
 
-## CU08 : Submit Leftover Report
+## CU08 : Submit Leftover Report *
 
 **Scope:**  System Use case
 
@@ -260,7 +273,7 @@ N/A
 **Special Requirements** 
 - User has a valid XML file containing a list of items. The user has already loaded this list in the tracker. The statistics have a place to be saved.
 
-## CU09 : Opens Statistics Page 
+## CU09 : Opens Statistics Page *
 
 **Scope:**  System Use case
 

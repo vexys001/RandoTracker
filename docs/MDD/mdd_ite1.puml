@@ -24,10 +24,10 @@ class Item <C12>  {
 }
 
 class ButtonList<C11>{
-    buttons: ArrayList<Button>
+    buttons: ArrayList<ItemButton>
 }
 
-class Button <C08 & C12> {}
+class ItemButton <C08 & C12> {}
 
 class ListExtractor <C13> {}
 
@@ -45,7 +45,7 @@ ListExtractor "1" -- "1" ButtonList :  Creates\nA11
 ListExtractor "1" -- "1" ItemList : Creates\nA11
 
 ItemList "1" -l- "1" ButtonList : Represents\nA07
-ButtonList "1" -- "*" Button : Manages\nA11
+ButtonList "1" -- "*" ItemButton : Manages\nA11
 
 Item "*" -- "1" ItemList : > are saved in\nA08
 

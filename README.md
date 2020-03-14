@@ -1,6 +1,12 @@
 # Randomizer Tracker Project v0.01
 Randomizer Tracker Project
 
+- [Randomizer Tracker Project v0.01](#randomizer-tracker-project-v001)
+  - [Project Sheet](#project-sheet)
+  - [DCU](#dcu)
+  - [CU : Use Cases](#cu--use-cases)
+  - [Iteration 1](#iteration-1)
+
 ## Project Sheet
 | Subject             | Details                                                                                                                    |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------- |

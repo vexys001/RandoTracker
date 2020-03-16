@@ -35,18 +35,17 @@ class Document <C14> {
     link : string
 }
 
-Document "1" -- "1" Menu : Selected in\nA08
+Document "1" -- "1" Menu : > Selected in\nA08
 ListExtractor "1" -- "1" Document : > Uses\nA11
 
-User "1" -- "1" Menu : > Uses\nA11
-ButtonList "1" -l- "1" User :  Uses\nA11
+User "1" -- "1" Menu :  Uses\nA11
+ButtonList "1" -- "1" User : < Uses\nA11
 
-ListExtractor "1" -- "1" ButtonList :  Creates\nA11
-ListExtractor "1" -- "1" ItemList : Creates\nA11
+ListExtractor "1" -- "1" ItemList : > Creates\nA11
 
 ItemList "1" -l- "1" ButtonList : Represents\nA07
 ButtonList "1" -- "*" ItemButton : Manages\nA11
 
-Item "*" -- "1" ItemList : > are saved in\nA08
+Item "*" -- "1" ItemList : are saved in\nA08
 
 @enduml

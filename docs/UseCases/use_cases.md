@@ -147,7 +147,10 @@
 
 **Main Success Scenario:** 
 1. User clicks on a button for an Item.
-2. The List is updated.
+2. The button is updated.
+   1. If the button had only one occurence left, the button is removed from the button list. 
+   2. If the button had more than one occurence left, the occurence variable of the button is reduced by one. 
+3. All buttons have their probability updated.
 
 **Extensions:**
 

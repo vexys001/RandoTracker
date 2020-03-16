@@ -11,8 +11,6 @@ note left of ac: Controller\nThe appController controls the Application.\n It wi
 
 ac->ac : url = openFileExplorer()
 
-
-
 @enduml
 
 @startuml
@@ -43,7 +41,7 @@ end loop
 
 participant ":ButtonList" as bl
 note left of bl: Creator
-le->bl ** : buttonList = ButtonList.create(itemList: ItemList)
+il->bl ** : buttonList = ButtonList.create(itemList: ItemList)
 
 participant ":ItemButton" as ib
 loop For each item of itemLlist

@@ -6,7 +6,52 @@ title RDCU of openLoadWindow(CU01)
 participant "appController:Controller" as ac
 
 
-note left of ac: Note
-->ac : documentWindow = openLoadWindow()
+note left of ac: Controller\nThe appController controls the Application.\n It will request a File explorer window and\n obtain an url of of a document with it.
+->ac : openLoadWindow()
+
+ac->ac : url = openFileExplorer()
+
+
+
+@enduml
+
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU of loadItemList(CU01)
+
+participant "appController:Controller" as ac
+participant ":ListExtractor" as le
+
+note left of ac: Controller
+->ac : url = openFileExplorer()
+
+note left of le: Expert
+ac->le : listeExtractor.loadListItemList(url)
+
+participant ":ItemList" as il
+note left of il: Creator
+le->il ** : itemList = ItemList.create(list:NodeList)
+
+participant ":Item" as i
+loop For each item of the list
+note left of i: Creator
+il->i ** : item = Item.create(name: string, occurences:int)
+note left of i: Low Coupling
+il->i : itemList.addItem(item)
+end loop
+
+participant ":ButtonList" as bl
+note left of bl: Creator
+le->bl ** : buttonList = ButtonList.create(itemList: ItemList)
+
+participant ":ItemButton" as ib
+loop For each item of itemLlist
+note left of ib: Creator
+bl->ib ** : button = ItemButton.create(item: Item)
+note left of ib: Low Coupling
+bl->ib : buttonList.addButton(button)
+end loop
+
 
 @enduml

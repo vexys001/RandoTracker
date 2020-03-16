@@ -36,7 +36,7 @@ HANDLED CUs: CU01, CU04, C06
 2.  **Contract** : loadItemList(url: URL)
     - **Reference**: CU01
     - **PreCondition**: 
-      - User has selected a properly formatted XML file from the Document Explorer Window
+      - User has selected a properly formatted XML file from the File Explorer Window
     - **PostConditions**: 
       - An instance of the ItemList is created. 
       - An instance of an Item is created for each element extracted.
@@ -46,6 +46,15 @@ HANDLED CUs: CU01, CU04, C06
       - Each ItemButton created is associated to the ButtonList.
 
 ### RDCU
+
+1. RDCU of openLoadWindow(CU01)
+
+![RDCU of openLoadWindow(CU01)](https://www.plantuml.com/plantuml/png/0/NL1DImCn4BtdLmmzwS6YrmMbibKGF8dLIozZCai7ivEOJ5ZzzywkXM8lOSBxcZURgbYqZT7LJvQC1KUe-XF9tiB-30aqO8iw9571aU2DIa11fwocUDdsEqW3f4pod32yiuGqNVIxwvjBvyn1sND6KLXXphsPb1GZbUuqhW0he7VEILA2I8FEZkWxE97sydeW-6S1_c-ie0RTvnpPetAIzLxWIM7Y6A7GLwEgWF38jYvzvvYAQQTbJq09HauVYYpsWLRYqiRY8IJVHfBPI0_0kdPNT-YXE-zgFT4VeLb_kn3ck8TZsannRaCIxBI_ "RDCU of openLoadWindow(CU01)")
+
+2. RDCU of loadItemList(CU01)
+
+![RDCU of loadItemList(CU01)](https://www.plantuml.com/plantuml/png/0/TPFDJkim48NtVeeHgnJHwhArH8Ne1UbAY0KIx2VE52ocTkHCTE7j6UUt3MKJMRRddE-S9BUDO9BsmARvyA76X0Tev8j9dycxnKb5UsnPzZ58m0F1AwKA0nhneXFFVtSl4FV04Qj_GeT7tqYnU_bplJ96vyKxNsCGkC2wtgb4YioKxBoy06m0tUbbcsNkFoMXazXVOJ8cH25Tx2KxehCmovZr5XrOQ1F33SIQmeDdkl-iEIPAnMenp6H13oc9GRVUQX0Bh9uqcMvoeemnfLBfPIWx7dQ8dazDF2jX8bGrmxJUUeRBIpNomv22ZlCRb-zHaHdiKwmeRvvrwvqCnrZ3Gqn0wDuxnUmexzJ5M73C69uLOwOO24Rt_7vjzn64jok8phM9WgF6-g0mIyt7-5zVG5kptXw4vsmRhBhleSWRAqEXWeoyJ7JNYiGmDLWk6YmN3PP3W-KqfWbcZJ77266dVizMsG_sXPQ_DDf9dQcqdC7A7Bqy1XjgxVMFeNgWrK-jaou7mUEOkSvUhkWtZoirjxhMd_OR "RDCU of loadItemList(CU01)")
+
 
 ## CU04 Remove an Item of the Button List
 

@@ -45,11 +45,13 @@ HANDLED CUs: CU01, CU04, C06
       - User has selected a properly formatted XML file from the File Explorer Window
     - **PostConditions**: 
       - An instance of the ItemList is created. 
-      - An instance of an Item is created for each element extracted.
-      - Each Item created is associated to the ItemList.
+      - for each element extracted:
+        - An instance of an Item is created 
+        - Each Item created is associated to the ItemList.
       - An instance of the ButtonList is created. 
-      - An instance of an ItemButton is created for each element extracted.
-      - Each ItemButton created is associated to the ButtonList.
+      - For each item(Item) of the ItemList:
+        - An instance of an ItemButton is created.
+        - Each ItemButton created is associated to the ButtonList.
 
 ### RDCU
 
@@ -78,8 +80,8 @@ HANDLED CUs: CU01, CU04, C06
     - **PostConditions**:
       - The variable occurence of button (ItemButton) will be reduced by 1.
       - If the variable occurence of button is equal to 0:
-        - delete instance of button.
-        - delete association between the button and buttonList.
+        - Delete association between the button and buttonList.
+        - Delete instance of button.
   
 2. **Contract** : updateButonList()
     - **Reference**: CU04
@@ -106,6 +108,17 @@ HANDLED CUs: CU01, CU04, C06
 
 
 ### Contracts
+
+1. **Contract** : resetButtonList()
+    - **Reference**: CU06
+    - **PreCondition**: User has a buttonList (ButtonList) and an itemList (ItemList) already available.
+    - **PostConditions**:
+      - For each button (ItemButton) of buttonlist:
+        - Delete association between button and buttonList.
+        - Delete instance of button
+      - For each item (Item) of itemList
+        - An instance of an ItemButton is created with item.
+        - Each ItemButton created is associated to the ButtonList.
 
 ### RDCU
 

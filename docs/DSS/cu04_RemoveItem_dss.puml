@@ -9,7 +9,7 @@ actor ":User" as u
 participant ":Application" as a 
 
 u -> a : clickItemButton(ItemButton)
-a --> u : Reduced the occurence of button by 1
+a --> u : Reduced the occurences of ItemButton by 1
 
 a -> a : updateButtonList()
 a --> u : Each ItemButton of ButtonList Updated

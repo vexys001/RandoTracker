@@ -31,7 +31,7 @@
 **Postconditions:** User has a list of buttons for each item of the list to use.
 
 **Main Success Scenario:** 
-1. User selects Load and a Document Explorer Window is opened at the root of the program.
+1. User selects Load in the menu and a Document Explorer Window is opened at the root of the program.
 2. User selects a XML file from his desired folder.
 3. File is loaded and a list of buttons for each item of the list appears.
 
@@ -201,12 +201,11 @@ N/A
 
 **Preconditions:** User has a list loaded.
 
-**Postconditions:** The List is reset to its formal state.
+**Postconditions:** The List is reset to its state at the moment of its download.
 
 **Main Success Scenario:** 
-1. User opens the menu.
-2. User selects Reset
-3. The List is reset to its formal state.
+1. User selects Reset in the menu.
+2. The ButtonList is reset to its state at the moment of its download.
 
 **Extensions:**
 

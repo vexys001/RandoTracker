@@ -15,6 +15,9 @@ HANDLED CUs: CU01, CU04, C06
     - [Contracts](#contracts-1)
     - [RDCU](#rdcu-1)
   - [CU06 Reset the Button List](#cu06-reset-the-button-list)
+    - [DSS](#dss-2)
+    - [Contracts](#contracts-2)
+    - [RDCU](#rdcu-2)
   - [Return to README](#return-to-readme)
 
 ## MDD 
@@ -95,8 +98,16 @@ HANDLED CUs: CU01, CU04, C06
 ![RDCU of updateButonList(CU04)](https://www.plantuml.com/plantuml/png/0/RP6nQiCm48RtUueZapEaTEYa8OIu7GeTIY7TJ_A9Y9ub8PsXVVlAQR2RqaKSqg_l-uKELQdeD0hKZn0p5HgnwfTmMqjmVqu6zZI9-XGrqiZupcMWIA11sustn_w4oUEK1r8-JfhYIwZQzQVxXor0GsXm8LDKt53EVQEK9CB5hEC6gIAvsx2TzCeonsMy9AtybpJFokDFyf8A5Y0cPHJsEZUqOl3fCtDH8BVRMq63g-HkUK3Rg5shBYbbzAaWaplZIiSPfcV6jTQjADX5P6Mt3tOHNIMl9TdkbphQcLwt21m7dBq0S6Xp-uXl "RDCU of updateButonList(CU04)")
 
 
-
-
 ## CU06 Reset the Button List
+
+### DSS
+
+![DSS - Reset the Button List](https://www.plantuml.com/plantuml/png/0/JP0nJWD134NxEOML2egzG0gKe8WAA8YWDxDciJBhMSP_XBWzNbAmZMNvVJrB_-3WXZuNIdvHMxZnJ8wV8Z6RvXLjo4a-k1SyLCCppq9lqaOstYJUEL-cLhkDkPRQ28tD0ubX-q6-kbYM9t7dIOv59wCS6Ma9YlX-Efzfe1Tn0U5JwBu3rUXH7IbnHgXt-rUNjYDswYcyqAmB6m8SbwLePcYrFywKKgVXBfOzjLLwzQswczl4D0JhmVxFf7vD4YefFFfW235ehDzMAeyf7SJ6AEWN "DSS - Reset the Button List")
+
+
+### Contracts
+
+### RDCU
+
 
 ## [Return to README](../../README.md)

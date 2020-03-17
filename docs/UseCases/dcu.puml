@@ -16,7 +16,7 @@ rectangle "System" {
   (Recategorize an Item of the List) as RCI
   (Remove an Item of the List) as RI
   (Undo an Item Removal) as UIR
-  (Reset the List) as RL
+  (Reset the ButtonList) as RBL
   (Undo Reset the List) as UR
   (Submit Leftover Report) as SR
   (Open Stats Page) as OS
@@ -26,7 +26,7 @@ rectangle "System" {
   P -- CI
   P -- RI
   P -- UIR
-  P -- RL
+  P -- RBL
   P -- UR
   P -- OS
   P -- SR

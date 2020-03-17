@@ -1,0 +1,14 @@
+@startuml 
+skinparam style strictuml
+skinparam DefaultFontName Verdana
+skinparam backgroundcolor transparent
+skinparam sequenceMessageAlign center
+title DSS - Reset the Button List
+
+actor ":User" as u
+participant ":Application" as a 
+
+u -> a : resetButtonList()
+a --> u : ButtonList is reset to its state at download
+
+@enduml

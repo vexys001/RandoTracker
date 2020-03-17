@@ -26,7 +26,7 @@ end opt
 @startuml
 skinparam style strictuml
 skinparam defaultfontname Verdana
-title RDCU of updateButonList(CU04)
+title RDCU of updateButtonList(CU04)
 
 participant "appController:Controller" as ac
 participant "buttonList:ButtonList" as bl

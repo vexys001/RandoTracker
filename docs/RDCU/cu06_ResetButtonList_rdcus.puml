@@ -1,0 +1,31 @@
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU of resetButtonList(CU06)
+
+participant "appController:Controller" as ac
+participant "buttonList:ButtonList" as bl
+participant ":ItemList" as il
+participant ":ButtonList" as nbl
+participant "button:ItemButton" as ib
+
+note left of ac: Controller
+->ac : resetButtonList()
+
+note right of ac: Expert
+ac -> bl :  destroy
+destroy bl
+
+note left of il: Expert
+ac->il : buttonList = itemList.createButtonList()
+
+note left of nbl: Creator
+il->nbl ** : buttonList = ButtonList.create(itemList: ItemList)
+
+loop for each Item  of the ItemList
+note left of ib: Creator
+nbl->ib **: button.updateProb(buttonList.nbItems) 
+end loop
+
+
+@enduml

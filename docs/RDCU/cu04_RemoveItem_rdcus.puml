@@ -4,19 +4,19 @@ skinparam defaultfontname Verdana
 title RDCU of clickItemButton(CU04)
 
 participant "appController:Controller" as ac
-participant "button:ItemButton" as b 
 participant "buttonList:ButtonList" as bl
+participant "button:ItemButton" as b
 
 note left of ac: Controller
-->ac : clickItemButton(ItemButton: button)
+->ac : clickItemButton(button)
 
-note left of b: High Cohesion
-ac->b : button.clicked()
+note left of bl: High Cohesion
+ac->bl : buttonRemoved = buttonList.removeButtonOccurence(button)
 
-note left of bl: Low Coupling
-ac->bl: buttonList.removeOccurence()
+note left of b: Low Coupling
+bl->b: buttonRemoved = button.removeOccurence()
 
-opt button.occurences == 0
+opt buttonRemoved
     note left of bl: Expert
     ac->bl : buttonList.removeButton(button)
 end opt

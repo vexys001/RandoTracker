@@ -88,11 +88,13 @@ HANDLED CUs: CU01, CU04, C06
 
 1. RDCU of clickItemButton(CU04)
 
-![RDCU of clickItemButton(CU04)](https://www.plantuml.com/plantuml/png/0/RP5FQyCm3CNl_XIYf_RGqiDEXfRIRh11OJ3exegZjAQER6nbVxxzd6HPM5CVZB3U-pq9xv9WbAPsAbqj1unOGv9lH_cErjnqIggmSL9v5iQQu9rYYOnAh6J7s-FX1Bu2uwovlWZL-qR4y_nmMZyibCe8iSO6P84PXd38bEYTewZ7SWQO0Cr_ST5nz8ZiL0NSKnrj4ht_AtkbKugz43Ygf9qGZOOnKostQ41FvXvB3JrySSCfD3pRyoMpBfIiPuLckIrWaAyw8fNpYSzfEFhFx6k2itpkVMxmjOEl8jN-WrwDQIAnePRXWmnaFxmds6nWhI2VISJJLw0eNQyFW3i9lyiE2nANa7EKskKg__uF "RDCU of clickItemButton(CU04)")
+![RDCU of clickItemButton(CU04)](https://www.plantuml.com/plantuml/png/0/TP9FQyCm3CNl-XIYf_NGiSDEXfNITB11OL3exegZjAQERHnbVxxzj6GqD5rzCC9w-hqdyAeLoj8r7jgJ2uaoDTZAjsUzixEJJiKrTLxg62HGm_ZEkQ9084vqOhSfzXXhjDxPqwjmi-v4OhWhzW-FSm15YBCkKH2SKKg5KdBqdhCPonbIYsGlnMNFsRfMpFfSzihI_wSqe_cW0WXH63tNyXkGhC7H4XPBicYkOW-i-MIsz0PVtE6eW2EtBWOWkrYMNW73m8wR-C4LFk4O-pxtZmFupTekSx1yoy7WDduglqlUXGEKNlctw7_aaQcqcEHI3QZdQeldhyHP-jvaXQl8vwGSAbGym4eh_Hi_ "RDCU of clickItemButton(CU04)")
 
 2. RDCU of updateButonList(CU04)
 
 ![RDCU of updateButonList(CU04)](https://www.plantuml.com/plantuml/png/0/RP6nQiCm48RtUueZapEaTEYa8OIu7GeTIY7TJ_A9Y9ub8PsXVVlAQR2RqaKSqg_l-uKELQdeD0hKZn0p5HgnwfTmMqjmVqu6zZI9-XGrqiZupcMWIA11sustn_w4oUEK1r8-JfhYIwZQzQVxXor0GsXm8LDKt53EVQEK9CB5hEC6gIAvsx2TzCeonsMy9AtybpJFokDFyf8A5Y0cPHJsEZUqOl3fCtDH8BVRMq63g-HkUK3Rg5shBYbbzAaWaplZIiSPfcV6jTQjADX5P6Mt3tOHNIMl9TdkbphQcLwt21m7dBq0S6Xp-uXl "RDCU of updateButonList(CU04)")
+
+
 
 
 ## CU06 Reset the Button List

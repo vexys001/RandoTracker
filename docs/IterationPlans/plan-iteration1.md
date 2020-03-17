@@ -46,10 +46,10 @@ HANDLED CUs: CU01, CU04, C06
     - **PostConditions**: 
       - An instance of the ItemList is created. 
       - for each element extracted:
-        - An instance of an Item is created 
+        - An instance of an Item is created.
         - Each Item created is associated to the ItemList.
       - An instance of the ButtonList is created. 
-      - For each item(Item) of the ItemList:
+      - For each Item of the ItemList:
         - An instance of an ItemButton is created.
         - Each ItemButton created is associated to the ButtonList.
 
@@ -78,7 +78,7 @@ HANDLED CUs: CU01, CU04, C06
     - **Reference**: CU04
     - **PreCondition**: User has a buttonList (ButtonList) already available.
     - **PostConditions**:
-      - The variable occurence of button (ItemButton) will be reduced by 1.
+      - The variable occurences of button (ItemButton) is reduced by 1.
       - If the variable occurence of button is equal to 0:
         - Delete association between the button and buttonList.
         - Delete instance of button.
@@ -116,8 +116,8 @@ HANDLED CUs: CU01, CU04, C06
       - For each button (ItemButton) of buttonlist:
         - Delete association between button and buttonList.
         - Delete instance of button
-      - For each item (Item) of itemList
-        - An instance of an ItemButton is created with item.
+      - For each Item of itemList
+        - An instance of an ItemButton is created.
         - Each ItemButton created is associated to the ButtonList.
 
 ### RDCU

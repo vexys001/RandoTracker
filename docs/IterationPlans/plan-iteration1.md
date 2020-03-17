@@ -19,14 +19,14 @@ HANDLED CUs: CU01, CU04, C06
 
 ## MDD 
 
-![MDD](https://www.plantuml.com/plantuml/png/0/TLDBQzmm4BxhLmnRQA0GkcvQ6inYakusKEXU6jfJBx8zkoiYIsOqBZ6X_xqZcVKZQNomhPdlnKYw2Qo9kyQgy61Sgqat4BYtA6yorRDEZGVTMJvunqut2B-GQktq3B6L5dbxpqZekM_nJWfRRpt1cz9sg2mU6DW3cUE9eJQ45HllrCdK2DYqt4E3JOaKrCKaQut3g0QU-EILOiCISR_RALLP7GBy34YmsQu_5V3qzrpSe-kac5r9KO4yhCkG3v-qBZjcxwGq_AYH-Osn-Mu2HtPsPXif1iZXbaZtiRk9i0A4Dh4YuqC1YP9cbAT9kgEiVLLrXAx2g68Sun5fyloICYJTQFgqJBWq7R35Cl1GZ5EuXhUGOWmYptEyaYGsthVaIrqQQxZFuM2zviaasdzzPD8LUpeFTkpkVDKrwDBCFfwjPUCU9cl1ZgXLjeBBo_H9-vH30VTevJXWBP5-kzlrjLewpYYZJAJ9vWV1PvbIwHoyb9v1fZ7FSOcNmsQkzQhvU3gY-PPGyyWPMmbk1_pCCeSVs186YHufwy__o_DkDT_F7FPonuuBYuHvcKQJt5lzPpP0TOEkbaly3m00 "MDD")
+![MDD](https://www.plantuml.com/plantuml/png/0/TLDBQzmm4BxhLmnRQA0GkcvQ6inYakusKEXU6jfJBx8zkoiYIsOqBZ6X_xqZcVKZQNpmO-PxUIJT1DR4NMDLU32krQGR2DnRb3kPwbcdneFkB1-yOwSRX5z8jNPwXjXAYxozPoJqtBTu9uMjjvxWJMaxL1OF3Eo1pF74K1l2YertwcHg16nQxg71faGAwcAIjSPXL0DFVF9AiM69kD_jbAgi3W5-1YJORDUV2dZwUoxkqNLIpAwag40krcN8XqVwBZjcxwGqlAYH-Osn-Mu2HtPsPXif1iZXbaZtiRk9i0A4Dh4YuqC1YP9cbAT9kgDy-whg25s5KSKunYFIvFabPKYwqVHfcN1fEc2B17dlobWAINBv2mCipkKQta8ADiW-J_PAjYJVaYzrQQpXFeU3zNfc4WDzVMJI5NiwZthixdpLDUZI53-UhMKf7oPhmOweLRQ2oylqI2kNGm7tQ6M3O2sHVhlRzRLQEiueeqoaoNO8WiyofTBEU2azWqo3d-CIBuVDNEjLyt6_HFCjeUQHCxOIt0xucMKEFx0b318zKjQV_vVdtMg-dZdivTGT5nO9ypAD9Zd9-iziWEe6NIt7-Xy0 "MDD")
 
 
 ## CU01 Load an Item List
 
 ### DSS
 
-![DSS - Load an ItemList](https://www.plantuml.com/plantuml/png/0/JP3DQWCn38JlVWgHKmhT5zX3ISgs4DZsq93shDhgOkALNLdkpzjNcnBOYp3wPaQ3TrLHjCq9N3r7BYWuGzNVH3Ob-WMjo40Vs98-PjPdd0bUIG8ohXJlwC-JvCR1vvG5L92h8M9TNw3FHkpfYMh5YVOfJWpUD2HEezhruNY43iQC0P3Xe3IFiQfpwDLID_sfacm0ApHdaHfzBCXgO5zAYXurPhvm1ESQT7Vsw24NuYNpBNB8tziRXz0PQeQ6xDji3U3XfrXn4lWNhTp9dDScsoQfXzFBkCwuGgZuHU4MxfjgvijcyL9mRaSSx4__0000 "DSS - Load an ItemList")
+![DSS - Load an ItemList](https://www.plantuml.com/plantuml/png/0/JP3DQWCn38JlVWgHKmhT5zX3ISgsKDZsq93shDhgOkALNLdkpzjNcn3OYp3wPaQ3TrLHjCq9N3r5BYWuGzM_H3Ob-WMjo42Vs98-PjONd0dUI08ohXGVw4-JvCR1vvG5L92h8M9TNw2lHkpfcMh5YVOfJWpUD2HEezhruN203iQC0P3XIMaUOrNdqAkbRlfZ9Ta0LcZE8ZNwM93LmBwK53rgp7pc2CurwExiqKCkn4lcU-IGVxOt3g4pr0mDsRVP6i33Rx7Y970HkKLpSITpNfjicwGUZg_ZEkCAeU8tXLkuRwgPpvl5Iy6v7N6mF_q7 "DSS - Load an ItemList")
 
 
 ### Contracts
@@ -64,26 +64,36 @@ HANDLED CUs: CU01, CU04, C06
 
 ### DSS
 
-![DSS - Load an ItemList](https://www.plantuml.com/plantuml/png/0/JP2nJWCn343tV8NLgGmTM3kW5bL8I8M1gkm-npsYopb7OW_zUtpNWLkIAE_fESgXALQrCKDeGv89AuxGz9xPrvfeHYjouXjQrhSY-eaZmpVNY88heqCQ-bfC8fLSAcX5QOvOT3s1Vus5-8DRmvwFEVK2v0xNe4bz-kboWHsS2qP0WNVbyPoQXe2aNjtihuth1h211KzgeZIXg8FZDEL4gAd8mX52CDYz-64Fv6YOOw-cMcJxs9u2miuDS-EBen57q1-6GcHrVYQK6tIB2jqTdbT1co8gFpBp0xVhrlyrN1SlXd1WYVwdVm00 "DSS - Load an ItemList")
+![DSS - Remove an Item of the Button List](https://www.plantuml.com/plantuml/png/0/JP0nQyCm48Lt_OeZKpfuw9gX92Kj5DeE2Ub-FbqSOVlaIgT2_drFzX0lGl1zUk-XVLPCMiO1NEw3J9XmXAptWUrCWIfQaIDViGpw7aM_SMJuuUHHS6MqI7sNOX5FSOW9DA5aGoowRk3VmaBynJbZnuSXT09a3YUdGQtzU3v30oSUuny32dmeZn2le3U6rw8Q1Jv3LkUGr6eskqlcj07CK9nrQA0meQY1mpGDWL13b9aZE5UWUR7B3iXGNxENpEtZ-kGG6hEAMIVsXTZFvP6efBgzhccN9UqTdbtrbz0oULHUOkh8xJhh3Ua6ZvgQyZ3XCZ_rpkrPlFtzFm00 "DSS - Remove an Item of the Button List")
 
 
 ### Contracts
 
-1. **Contract** : clickItemButton(Button)
+1. **Contract** : clickItemButton(ItemButton: button)
     - **Reference**: CU04
-    - **PreCondition**: User has a button list already available.
+    - **PreCondition**: User has a buttonList (ButtonList) already available.
     - **PostConditions**:
-      - The variable occurence of Button will be reduced by 1.
-      - If the variable occurence is equal to 0, delete instance of button.
-      - If the variable occurence is equal to 0, delete association between the button and its ButtonList.
+      - The variable occurence of button (ItemButton) will be reduced by 1.
+      - If the variable occurence of button is equal to 0:
+        - delete instance of button.
+        - delete association between the button and buttonList.
   
 2. **Contract** : updateButonList()
     - **Reference**: CU04
-    - **PreCondition**: User has a button list already available.
+    - **PreCondition**: User has a buttonList (ButtonList) already available.
     - **PostConditions**:
-      - The variable probability of each ItemButton of the ButtonList is updated.
+      - The derived variable probability of each ItemButton of buttonList is updated.
 
 ### RDCU
+
+1. RDCU of clickItemButton(CU04)
+
+![RDCU of clickItemButton(CU04)](https://www.plantuml.com/plantuml/png/0/RP5FQyCm3CNl_XIYf_RGqiDEXfRIRh11OJ3exegZjAQER6nbVxxzd6HPM5CVZB3U-pq9xv9WbAPsAbqj1unOGv9lH_cErjnqIggmSL9v5iQQu9rYYOnAh6J7s-FX1Bu2uwovlWZL-qR4y_nmMZyibCe8iSO6P84PXd38bEYTewZ7SWQO0Cr_ST5nz8ZiL0NSKnrj4ht_AtkbKugz43Ygf9qGZOOnKostQ41FvXvB3JrySSCfD3pRyoMpBfIiPuLckIrWaAyw8fNpYSzfEFhFx6k2itpkVMxmjOEl8jN-WrwDQIAnePRXWmnaFxmds6nWhI2VISJJLw0eNQyFW3i9lyiE2nANa7EKskKg__uF "RDCU of clickItemButton(CU04)")
+
+2. RDCU of updateButonList(CU04)
+
+![RDCU of updateButonList(CU04)](https://www.plantuml.com/plantuml/png/0/RP6nQiCm48RtUueZapEaTEYa8OIu7GeTIY7TJ_A9Y9ub8PsXVVlAQR2RqaKSqg_l-uKELQdeD0hKZn0p5HgnwfTmMqjmVqu6zZI9-XGrqiZupcMWIA11sustn_w4oUEK1r8-JfhYIwZQzQVxXor0GsXm8LDKt53EVQEK9CB5hEC6gIAvsx2TzCeonsMy9AtybpJFokDFyf8A5Y0cPHJsEZUqOl3fCtDH8BVRMq63g-HkUK3Rg5shBYbbzAaWaplZIiSPfcV6jTQjADX5P6Mt3tOHNIMl9TdkbphQcLwt21m7dBq0S6Xp-uXl "RDCU of updateButonList(CU04)")
+
 
 ## CU06 Reset the Button List
 

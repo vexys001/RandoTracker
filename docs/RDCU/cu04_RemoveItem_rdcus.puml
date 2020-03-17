@@ -1,0 +1,44 @@
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU of clickItemButton(CU04)
+
+participant "appController:Controller" as ac
+participant "button:ItemButton" as b 
+participant "buttonList:ButtonList" as bl
+
+note left of ac: Controller
+->ac : clickItemButton(ItemButton: button)
+
+note left of b: High Cohesion
+ac->b : button.clicked()
+
+note left of bl: Low Coupling
+ac->bl: buttonList.removeOccurence()
+
+opt button.occurences == 0
+    note left of bl: Expert
+    ac->bl : buttonList.removeButton(button)
+end opt
+
+@enduml
+
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU of updateButonList(CU04)
+
+participant "appController:Controller" as ac
+participant "buttonList:ButtonList" as bl
+participant "button:ItemButton" as ib
+
+note left of bl: Expert
+ac->bl : buttonList.updateButtons()
+
+loop for each ItemButton  of the ButtonList
+note left of ib: Expert
+bl->ib : button.updateProb(buttonList.nbItems) 
+end loop
+
+
+@enduml

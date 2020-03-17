@@ -3,15 +3,15 @@ skinparam style strictuml
 skinparam DefaultFontName Verdana
 skinparam backgroundcolor transparent
 skinparam sequenceMessageAlign center
-title DSS - Load an ItemList
+title DSS - Remove an Item of the Button List
 
 actor ":User" as u
 participant ":Application" as a 
 
-u -> a : clickItemButton(Button)
+u -> a : clickItemButton(ItemButton)
 a --> u : Reduced the occurence of button by 1
 
-u -> a : updateButtonList()
-a --> u : ButtonList Updated
+a -> a : updateButtonList()
+a --> u : Each ItemButton of ButtonList Updated
 
 @enduml

@@ -11,7 +11,7 @@ participant ":Application" as a
 u -> a : openLoadWindow()
 a --> u : Document Explorer Window
 
-u -> a : loadItemList(url: URL)
+a -> a : loadItemList(url: URL)
 a --> u : ItemList saved, ButtonList loaded
 
 @enduml

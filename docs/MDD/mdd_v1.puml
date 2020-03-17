@@ -25,6 +25,7 @@ class Item <C12>  {
 
 class ButtonList<C11>{
     buttons: ArrayList<ItemButton>
+    /nbItems: int
 }
 
 class ItemButton <C08 & C12> {

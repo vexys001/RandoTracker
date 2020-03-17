@@ -19,9 +19,7 @@ HANDLED CUs: CU01, CU04, C06
 
 ## MDD 
 
-MDD
-
-![MDD](https://www.plantuml.com/plantuml/png/0/TLDTI-j047tVNp5KKBWWD5ulLq89Qki5mRvSqITVjicqNTpibjc9MCJ_xko6viEFFZJ9p3bppfvXBmDhugQsAZmRjzEaQmYyjoZ_PCfFdGhNkh6yzewThX4UaIhjz00nbnPvUyz8w7c_mtzIc7lh2OvMja5bSSt07iXijWoL8IpPUAUsfaB0UiTxgB5U8GLrqe-rnc6S1fvuwvLYms9nkLWeLLeT0Zm499ZDftyAU7i_59Ve6YbclwMeG7wiLo5l7-bxrJ1x9wNsHNNCMyRwpWIExEp0Db8CaCCLaTx7xYp22X1QpugCim8I9MMKfoJTHhvzMJQ4hiGunJZ63LAlUPqyfBbHz6tiS2pQOeknuROOKxY0OqWs-YmYzUQLIPViwH1ArrtuigdHfVEU7yuheJ_tzWNReIRP14vFqoDbd4C1zsXbbLZ9mPxSrVH2ZHK7b6vCfCdYWk2pJAcqmw-Z1v0-eY4kyNAO3MVzADvjDehF2JLtdAwLuBR53oHp-8yxmY3M8sNwzpi_loR3NUImbFkn6Kaap5StckJEwPT1WEeINIKNy0C0 "MDD")
+![MDD](https://www.plantuml.com/plantuml/png/0/TLDBQzmm4BxhLmnRQA0GkcvQ6inYakusKEXU6jfJBx8zkoiYIsOqBZ6X_xqZcVKZQNomhPdlnKYw2Qo9kyQgy61Sgqat4BYtA6yorRDEZGVTMJvunqut2B-GQktq3B6L5dbxpqZekM_nJWfRRpt1cz9sg2mU6DW3cUE9eJQ45HllrCdK2DYqt4E3JOaKrCKaQut3g0QU-EILOiCISR_RALLP7GBy34YmsQu_5V3qzrpSe-kac5r9KO4yhCkG3v-qBZjcxwGq_AYH-Osn-Mu2HtPsPXif1iZXbaZtiRk9i0A4Dh4YuqC1YP9cbAT9kgEiVLLrXAx2g68Sun5fyloICYJTQFgqJBWq7R35Cl1GZ5EuXhUGOWmYptEyaYGsthVaIrqQQxZFuM2zviaasdzzPD8LUpeFTkpkVDKrwDBCFfwjPUCU9cl1ZgXLjeBBo_H9-vH30VTevJXWBP5-kzlrjLewpYYZJAJ9vWV1PvbIwHoyb9v1fZ7FSOcNmsQkzQhvU3gY-PPGyyWPMmbk1_pCCeSVs186YHufwy__o_DkDT_F7FPonuuBYuHvcKQJt5lzPpP0TOEkbaly3m00 "MDD")
 
 
 ## CU01 Load an Item List
@@ -62,12 +60,28 @@ MDD
 
 
 
-
 ## CU04 Remove an Item of the Button List
 
-### DSS 
+### DSS
+
+![DSS - Load an ItemList](https://www.plantuml.com/plantuml/png/0/JP2nJWCn343tV8NLgGmTM3kW5bL8I8M1gkm-npsYopb7OW_zUtpNWLkIAE_fESgXALQrCKDeGv89AuxGz9xPrvfeHYjouXjQrhSY-eaZmpVNY88heqCQ-bfC8fLSAcX5QOvOT3s1Vus5-8DRmvwFEVK2v0xNe4bz-kboWHsS2qP0WNVbyPoQXe2aNjtihuth1h211KzgeZIXg8FZDEL4gAd8mX52CDYz-64Fv6YOOw-cMcJxs9u2miuDS-EBen57q1-6GcHrVYQK6tIB2jqTdbT1co8gFpBp0xVhrlyrN1SlXd1WYVwdVm00 "DSS - Load an ItemList")
+
 
 ### Contracts
+
+1. **Contract** : clickItemButton(Button)
+    - **Reference**: CU04
+    - **PreCondition**: User has a button list already available.
+    - **PostConditions**:
+      - The variable occurence of Button will be reduced by 1.
+      - If the variable occurence is equal to 0, delete instance of button.
+      - If the variable occurence is equal to 0, delete association between the button and its ButtonList.
+  
+2. **Contract** : updateButonList()
+    - **Reference**: CU04
+    - **PreCondition**: User has a button list already available.
+    - **PostConditions**:
+      - The variable probability of each ItemButton of the ButtonList is updated.
 
 ### RDCU
 

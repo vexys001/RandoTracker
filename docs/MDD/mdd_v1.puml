@@ -27,7 +27,11 @@ class ButtonList<C11>{
     buttons: ArrayList<ItemButton>
 }
 
-class ItemButton <C08 & C12> {}
+class ItemButton <C08 & C12> {
+    name : string
+    occurences : integer
+    /probability: float
+}
 
 class ListExtractor <C13> {}
 

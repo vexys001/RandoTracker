@@ -8,10 +8,10 @@ title DSS - Load an ItemList
 actor ":User" as u
 participant ":Application" as a 
 
-u -> a : openLoadWindow()
-a --> u : Document Explorer Window
+u -> a : clickItemButton(Button)
+a --> u : Reduced the occurence of button by 1
 
-u -> a : loadItemList(url: URL)
-a --> u : ItemList saved, ButtonList loaded
+u -> a : updateButtonList()
+a --> u : ButtonList Updated
 
 @enduml
